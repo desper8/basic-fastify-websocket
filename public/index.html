@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Message logger client</title>
+  <link rel="stylesheet" href="vendors/semantic-ui/semantic.min.css" type="text/css">
+  <link rel="stylesheet" href="resources/css/stylesheet.css" type="text/css">
+</head>
+
+<body>
+  <div class="ui container">
+    <div id="message-list">
+    </div>
+    <div class="ui form" id="message-form">
+      <div id="message-fields" class="inline fields">
+        <div id="message-field" class="thirteen wide field">
+          <textarea id="message-textarea" rows="1" placeholder="Enter your message..."></textarea>
+        </div>
+        <div id="button-field" class="three wide field">
+          <button id="send-button" class="ui button">Send</button>
+        </div>
+      </div>
+      <p id="empty-error-message" class="error-message" hidden="true">Message field cannot be empty.</p>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="vendors/semantic-ui/semantic.min.js"></script>
+  <script src="resources/js/scripts.js"></script>
+</body>
+
+</html>
